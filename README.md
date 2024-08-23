@@ -1,3 +1,3 @@
 # Hangout
 # Application Overview 
-![plot](./images/FlowChart.jpeg)
+![plot](./FlowChart.jpeg)
