@@ -1,0 +1,27 @@
+﻿/* styles.css */
+
+.custom-btn {
+    background-color: #337ab7;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.error-btn {
+    background-color: #d9534f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}

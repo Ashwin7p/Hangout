@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Likes>
+  <user>
+    <ID>123455</ID>
+    <Store type="fast food">
+      <Name>McDonald's</Name>
+      <Address>1234 Test Avenue</Address>
+      <Zipcode>12345</Zipcode>
+      <Details>McDonald's Corporation is an American multinational fast food chain, founded in 1940 as a restaurant operated by Richard and Maurice McDonald, in San Bernardino, California, United States.</Details>
+      <Reviews>
+        <Review star="4.7">This place is awesome!!!</Review>
+        <Review star="2.3">Terrible food!!!</Review>
+      </Reviews>
+    </Store>
+  </user>
+  <user>
+    <ID>test12345</ID>
+    <Store type="Test type">
+      <Name>Test123</Name>
+      <Address>123 Test Rd </Address>
+      <Zipcode>12321</Zipcode>
+      <Details>Test details</Details>
+      <Reviews>
+        <Review star="3">mid</Review>
+        <Review star="0">bad</Review>
+      </Reviews>
+    </Store>
+  </user>
+  <user>
+    <ID>aa</ID>
+    <Store type="rating">
+      <Name>Starbucks</Name>
+      <Address>1158 W Washington St, Tempe, AZ 85288</Address>
+      <Zipcode>85281</Zipcode>
+      <Details></Details>
+      <Reviews>
+        <Review star=""></Review>
+        <Review star=""></Review>
+      </Reviews>
+    </Store>
+    <Store type="rating">
+      <Name>Domino's Pizza</Name>
+      <Address>681 E Apache Blvd (at S Rural Rd), Tempe, AZ 85281</Address>
+      <Zipcode>85281</Zipcode>
+      <Details></Details>
+      <Reviews>
+        <Review star=""></Review>
+        <Review star=""></Review>
+      </Reviews>
+    </Store>
+    <Store type="rating">
+      <Name>Jackson Hewitt Tax Service</Name>
+      <Address>1250 E Apache Blvd, Tempe, AZ 85281</Address>
+      <Zipcode>85281</Zipcode>
+      <Details></Details>
+      <Reviews>
+        <Review star=""></Review>
+        <Review star=""></Review>
+      </Reviews>
+    </Store>
+    <Store type="distance">
+      <Name>Panda Express</Name>
+      <Address>908 E Broadway Rd (Rural), Tempe, AZ 85282</Address>
+      <Zipcode>85281</Zipcode>
+      <Details></Details>
+      <Reviews>
+        <Review star=""></Review>
+        <Review star=""></Review>
+      </Reviews>
+    </Store>
+    <Store type="rating">
+      <Name>Starbucks</Name>
+      <Address>100 W University Dr, Tempe, AZ 85281</Address>
+      <Zipcode>85281</Zipcode>
+      <Details></Details>
+      <Reviews>
+        <Review star=""></Review>
+        <Review star=""></Review>
+      </Reviews>
+    </Store>
+  </user>
+  <user>
+    <ID>testnew</ID>
+    <Store type="rating">
+      <Name>Chipotle Mexican Grill</Name>
+      <Address>2000 E Rio Salado Pkwy (at Tempe Marketplace), Tempe, AZ 85288</Address>
+      <Zipcode>85281</Zipcode>
+      <Details></Details>
+      <Reviews>
+        <Review star=""></Review>
+        <Review star=""></Review>
+      </Reviews>
+    </Store>
+    <Store type="custom one">
+      <Name>custome name</Name>
+      <Address>123</Address>
+      <Zipcode>85281</Zipcode>
+      <Details>nice one</Details>
+      <Reviews>
+        <Review star="3">good one</Review>
+        <Review star="4">can be inimproved</Review>
+      </Reviews>
+    </Store>
+    <Store type="">
+      <Name></Name>
+      <Address></Address>
+      <Zipcode></Zipcode>
+      <Details></Details>
+      <Reviews>
+        <Review star=""></Review>
+        <Review star=""></Review>
+      </Reviews>
+    </Store>
+    <Store type="rating">
+      <Name>Starbucks</Name>
+      <Address>100 W University Dr, Tempe, AZ 85281</Address>
+      <Zipcode>85281</Zipcode>
+      <Details></Details>
+      <Reviews>
+        <Review star=""></Review>
+        <Review star=""></Review>
+      </Reviews>
+    </Store>
+  </user>
+</Likes>

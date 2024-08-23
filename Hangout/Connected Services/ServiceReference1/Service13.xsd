@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Services" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Services" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:52944/Service1.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="TRoot">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="context" nillable="true" type="tns:Context" />
+      <xs:element minOccurs="0" name="message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="results" nillable="true" type="tns:ArrayOfTResult" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TRoot" nillable="true" type="tns:TRoot" />
+  <xs:complexType name="Context">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="geo_bounds" nillable="true" type="tns:GeoBounds" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Context" nillable="true" type="tns:Context" />
+  <xs:complexType name="GeoBounds">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="circle" nillable="true" type="tns:Circle" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GeoBounds" nillable="true" type="tns:GeoBounds" />
+  <xs:complexType name="Circle">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="center" nillable="true" type="tns:Center" />
+      <xs:element minOccurs="0" name="radius" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Circle" nillable="true" type="tns:Circle" />
+  <xs:complexType name="Center">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="latitude" type="xs:double" />
+      <xs:element minOccurs="0" name="longitude" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Center" nillable="true" type="tns:Center" />
+  <xs:complexType name="ArrayOfTResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TResult" nillable="true" type="tns:TResult" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTResult" nillable="true" type="tns:ArrayOfTResult" />
+  <xs:complexType name="TResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="categories" nillable="true" type="tns:ArrayOfCategory" />
+      <xs:element minOccurs="0" name="chains" nillable="true" type="tns:ArrayOfChain" />
+      <xs:element minOccurs="0" name="distance" type="xs:int" />
+      <xs:element minOccurs="0" name="fsq_id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="geocodes" nillable="true" type="tns:Geocodes" />
+      <xs:element minOccurs="0" name="link" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="location" nillable="true" type="tns:Location" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="related_places" nillable="true" type="tns:RelatedPlaces" />
+      <xs:element minOccurs="0" name="timezone" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TResult" nillable="true" type="tns:TResult" />
+  <xs:complexType name="ArrayOfCategory">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Category" nillable="true" type="tns:Category" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCategory" nillable="true" type="tns:ArrayOfCategory" />
+  <xs:complexType name="Category">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="icon" nillable="true" type="tns:Icon" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Category" nillable="true" type="tns:Category" />
+  <xs:complexType name="Icon">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="prefix" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="suffix" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Icon" nillable="true" type="tns:Icon" />
+  <xs:complexType name="ArrayOfChain">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Chain" nillable="true" type="tns:Chain" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfChain" nillable="true" type="tns:ArrayOfChain" />
+  <xs:complexType name="Chain">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Chain" nillable="true" type="tns:Chain" />
+  <xs:complexType name="Geocodes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="main" nillable="true" type="tns:Main" />
+      <xs:element minOccurs="0" name="roof" nillable="true" type="tns:Roof" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Geocodes" nillable="true" type="tns:Geocodes" />
+  <xs:complexType name="Main">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="latitude" type="xs:double" />
+      <xs:element minOccurs="0" name="longitude" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Main" nillable="true" type="tns:Main" />
+  <xs:complexType name="Roof">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="latitude" type="xs:double" />
+      <xs:element minOccurs="0" name="longitude" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Roof" nillable="true" type="tns:Roof" />
+  <xs:complexType name="Location">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="address" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="address_extended" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="census_block" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="country" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cross_street" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="dma" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="formatted_address" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="locality" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="postcode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="region" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Location" nillable="true" type="tns:Location" />
+  <xs:complexType name="RelatedPlaces">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="children" nillable="true" type="tns:ArrayOfChild" />
+      <xs:element minOccurs="0" name="parent" nillable="true" type="tns:Parent" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RelatedPlaces" nillable="true" type="tns:RelatedPlaces" />
+  <xs:complexType name="ArrayOfChild">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Child" nillable="true" type="tns:Child" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfChild" nillable="true" type="tns:ArrayOfChild" />
+  <xs:complexType name="Child">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="fsq_id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Child" nillable="true" type="tns:Child" />
+  <xs:complexType name="Parent">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="fsq_id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Parent" nillable="true" type="tns:Parent" />
+  <xs:complexType name="WStrucResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="place" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="values" nillable="true" type="q1:ArrayOfstring" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WStrucResult" nillable="true" type="tns:WStrucResult" />
+</xs:schema>

@@ -1,0 +1,249 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flow Diagram of the Application</h1>
+    <body>
+        <img src="FlowChart.jpeg" alt="Description of the image" style="width: 100%; max-width: 800px; height: auto;">
+
+    </body>
+    <div>
+        This page is at: http://webstrar24.fulton.asu.edu/page10/Default
+    </div>
+    <br /><hr />
+    <h2>Application and Components Summary Table</h2>
+    <b>The application is deployed at: http://webstrar24.fulton.asu.edu/</b><br/>
+    <h4>Percentage of contribution: Ashwin Patil: 50%, Jiahao Wang: 35%, Jay Patel: 15%</h4>
+    <table>
+        <tr>
+            <th>Provider Name</th>
+            <th>
+                Page and
+                component
+                type, e.g., aspx,
+                DLL, SVC, etc.
+            </th>
+            <th>
+                Component description: What
+                does the component do? What
+                are input/parameter and
+                output/return value?
+            </th>
+            <th>
+                Actual resources and methods
+                used to implement the
+                component and where this
+                component is used.
+            </th>
+            <th>Try It Link</th>
+        </tr>
+        <tr>
+            <td>Ashwin Patil</td>
+            <td>XML Manipulation</td>
+            <td>Local Componenet was developed to store data of Members and staff in separate xml files based on checkbox during signup member.xml or Staff.xml</td>
+            <td>Try creating new Users in sign up and check the xml file and try logging in with an existing user, XML file for insertion and searching</td>
+            <td><a href="http://webstrar24.fulton.asu.edu/page7/">Try It Link</a></td>
+        </tr>
+        <tr>
+            <td>Ashwin Patil</td>
+            <td>
+                Cookie and Session Data
+            </td>
+            <td>Local Component was developed and integrated with the application to store cookie data and session based variables to  handle redirection, variables communication(serves as state management).</td>
+            <td>Logout option for User and check access, Login as a User and see User details in the Member page active user and browser testing using inspect>application>storage>cookie, The authentication is verified for each user to access the Staff page or Memeber page using session data like isStaff or isMember etc. </td>
+            <td><a href="http://webstrar24.fulton.asu.edu/page7/">Try It Link</a></td>
+        </tr>
+        <tr>
+            <td>Ashwin Patil</td>
+            <td>SVC Service</td>
+            <td>
+                The member page has Get_nearby_Stores Service where we get information about list of nearby stores available based on Zipcode, category and name.<br />
+                Find the Nearest Store:<br />
+                Input: zipcode and storename<br />
+                Output: List of Stores with their respective address<br />
+            </td>
+            <td>
+                Login as a staff/member and try accessing the member page and test the services with valid inputs,Write my own code and used below API reference to fetch the nearby stores:
+                https://location.four square.com/developer/reference/place -search It even uses Google maps geocoding API https://maps.googleapis.com/maps/api/geocode/
+                To fetch the place from zipcode and use local components to implement service
+            </td>
+            <td><a href="http://webstrar24.fulton.asu.edu/page7/">Try It Link</a></td>
+        </tr>
+        <tr>
+            <td>Ashwin Patil</td>
+            <td>SVC Service</td>
+            <td>
+                The StoreDetails Page has Get_Reviews services where we get information about the selected stores reviews.<br />
+                GetReviews:<br />
+                Input: zipcode amd storename<br />
+                Output: A String output with encoded html where details of the Store Reviews(List) are Provided<br />
+            </td>
+            <td>
+                Login as a staff/member and try accessing the member page and test the services with valid inputs,later select a store and navigate to StoreDetails Page. Write my own code and used below API reference to fetch the StoreDeatils:
+                Write my own code and used below API reference to fetch the Unique Place Id from zipcode and storename:
+                https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input="+storename+" "+selectedPlace+"&inputtype=textquery&fields=name,place_id&key="+apiKey
+                It also uses the below API to fetch Reviews from the Unique Place_id: https://maps.googleapis.com/maps/api/place/details/json?placeid=" + placeDetails[0] + "&fields=reviews&key=" + apiKey
+                It even saves the Average Rating of the Store in a file.
+            </td>
+            <td><a href="http://webstrar24.fulton.asu.edu/page7/">Try It Link</a></td>
+        </tr>
+        <tr>
+            <td>Ashwin Patil</td>
+            <td>SVC Service</td>
+            <td>
+                The StoreDetails Page has Get_Weather services where we get information about the selected zipcode weather.<br />
+                Weather Service:<br />
+                Input: US Zip Code<br />
+                Output: An array (or list) of strings, storing 5-day weather forecast for the given zipcode location.<br />
+            </td>
+            <td>
+                Login as a staff/member and try accessing the member page and test the services with valid inputs, later select a store and navigate to StoreDetails Page. Write my own code and used below API reference to fetch the weather of place zipcode:
+                Write my own code and used below API reference to fetch the 5 day weather Report:
+                https://docs.tomorr ow.io/reference/we ather-forecast It even uses Google maps geocoding API https://maps.go ogleapis.com/ma ps/api/geocode/
+                To fetch the place from zipcode and use local components to implement service.
+            </td>
+            <td><a href="http://webstrar24.fulton.asu.edu/page7/">Try It Link</a></td>
+        </tr>
+        <tr>
+            <td>Ashwin Patil</td>
+            <td>
+                aspx page and
+                server control
+            </td>
+            <td>
+                The public Default page that
+                call and link all other pages, like member,staff, error and likes.
+            </td>
+            <td>
+                GUI design and C# code
+                behind GUI intergrated with redirecting to respective pages.
+            </td>
+            <td><a href="http://webstrar24.fulton.asu.edu/page7/">Try It Link</a></td>
+        </tr>
+        <tr>
+            <td>Ashwin Patil</td>
+            <td>
+                Get Others who liked the Store.(StoreDetails Page)
+            </td>
+            <td>
+                Takes in session data value of the StoreName and matches the entries in Likes.xml page to fetch all users who have liked the same store.
+            </td>
+            <td>
+                XML manipulation implemented where we serach the Likes.xml and fetch corresponding users liking same page.
+            </td>
+            <td><a href="http://webstrar24.fulton.asu.edu/page7/">Try It Link</a></td>
+        </tr>
+        <tr>
+            <td>Ashwin Patil</td>
+            <td>
+                Like the Current Store for later.(StoreDetails Page)
+            </td>
+            <td>
+                Takes in session data values and records entries of the user liking the Store.
+            </td>
+            <td>
+                XML manipulation implemented where we insert in the Likes.xml with new user liking the store entry.
+            </td>
+            <td><a href="http://webstrar24.fulton.asu.edu/page7/">Try It Link</a></td>
+        </tr>
+        <tr>
+            <td>Ashwin Patil</td>
+            <td>
+                Get Search History(Staff Page)
+            </td>
+            <td>
+                Fetch all the Search Histories (storename, zipcode) done by the Users on Member Page.
+            </td>
+            <td>
+                XML manipulation implemented where we fetch all the entries with timestamp in  History.xml.This will give overall app usage info.
+            </td>
+            <td><a href="http://webstrar24.fulton.asu.edu/page7/">Try It Link</a></td>
+        </tr>
+        <tr>
+            <td>Jiahao Wang</td>
+            <td>
+                User Control
+            </td>
+            <td>
+                Local component was developed to allow User control using Captcha verifiaction on user signup and authentication verification
+            </td>
+            <td>Go To Signup Page and try creating new users with captcha verification, A captcha of 6 characters is generated and verification is imposed to user upon signup using the backend</td>
+            <td><a href="http://webstrar24.fulton.asu.edu/page7/">Try It Link</a></td>
+        </tr>
+        <tr>
+            <td>Jiahao Wang</td>
+            <td>
+                Global.asax<br />
+                Application_Error and Application_PreRequestHandlerExecute<br />
+            </td>
+            <td>Local Component to Handle the Global Error Handling of Application</td>
+            <td>Trigger Error Button is Pressed, Global.asax page modified with Application_Error and Application_PreRequestHandlerExecute</td>
+            <td><a href="http://webstrar24.fulton.asu.edu/page10/ServiceTesting.aspx">Try It Link</a></td>
+        </tr>
+        <tr>
+            <td>Jiahao Wang</td>
+            <td>SVC Service</td>
+            <td>
+                Stemming:<br />
+                Input: A string of words.<br />
+                Output: The string of the inflected or derived words replaced by their stem words.<br />
+            </td>
+            <td>
+                Write my own code referencing the Porter Stemming Algorithm provided at http://snowball.tartarus.org/otherlangs/english_cpp.txt
+                and use local components to implement service.<br />
+                Access the Default Page and hit on the Input field with values having action words and hit stem.It gives the stem output.Even the service is internally used to stem words in the input in search for storename on members page.
+            </td>
+            <td><a href="http://webstrar24.fulton.asu.edu/page7/">Try It Link</a></td>
+        </tr>
+        <tr>
+            <td>Jiahao Wang</td>
+            <td>Likes Page(aspx)</td>
+            <td>
+                The component has page for Fetching all the the Likes done by the User and also support input a new Review for a particular store, noting it for future refernce.
+                Input details on the page hit Like.
+            </td>
+            <td>
+                Write my own code fetch all the likes done using XML manipulation for searching as well as insert new Reviews for the Custome store details and inputs by the user.
+            </td>
+            <td><a href="http://webstrar24.fulton.asu.edu/page7/">Try It Link</a></td>
+        </tr>
+        <tr>
+            <td>Jay Patel</td>
+            <td>
+                DLL
+            </td>
+            <td>Local Component to Handle the Hashing Functionality using SHA256, The class library was developed and linked to the project as a reference to call the password encryption locally.</td>
+            <td>Input the Hash Input text box with a value and the Output Hash textbox shoul Display the Hashed value</td>
+            <td><a href="http://webstrar24.fulton.asu.edu/page10/ServiceTesting.aspx">Try It Link</a></td>
+        </tr>
+        <tr>
+            <td>Jay Patel</td>
+            <td>
+                Error Page
+            </td>
+            <td>Developed GUI page for Error handling.</td>
+            <td>Wrote the code behind the Designing the page layout.Just can be invoked from the Default page trigger error button.</td>
+            <td><a href="http://webstrar24.fulton.asu.edu/page10/ServiceTesting.aspx">Try It Link</a></td>
+        </tr>
+    </table>
+
+</body>
+</html>

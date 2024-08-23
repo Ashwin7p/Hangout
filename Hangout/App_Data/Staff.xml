@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Users>
+  <User>
+    <Username>
+			TA
+		</Username>
+    <Password>
+			443d65a14327cdb6f12ff95352d99baca8b06e40ba57d7d60b898d724bbb0f23
+		</Password>
+  </User>
+  <User>
+    <Username>TA2</Username>
+    <Password>443d65a14327cdb6f12ff95352d99baca8b06e40ba57d7d60b898d724bbb0f23</Password>
+  </User>
+  <User>
+    <Username>testnew</Username>
+    <Password>ecd71870d1963316a97e3ac3408c9835ad8cf0f3c1bc703527c30265534f75ae</Password>
+  </User>
+  <User>
+    <Username>test12345</Username>
+    <Password>0fe6712f51407d19f376022f8724ebb249623342c60472ebd952dcb4822e8bd3</Password>
+  </User>
+</Users>
